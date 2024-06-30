@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	color: #165788;
+}
+
+h1 {
+	color: #165788;
+}
+
+img {
+	width: 100px;
+	height: 100px;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+/*HEADER*/
+#index-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	gap: 1rem;
+}
+#contact-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: .5rem;
+}
+
+.main-settings {
+	margin: 0 auto;
+	width: 100%;
+	height: 100vh;
+	display : flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.auxiliar-settings {
+	margin: 0 auto;
+	padding-top: 3rem;
+	width: 100%;
+	height: 100vh;
+}
+.auxiliar-settings > h1 {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.button, #delete {
+	text-align: center;
+	font-weight: bold;
+	max-width: 100px;
+	padding: 0.5rem 1.25rem;
+	margin: 2rem auto;
+	border: 1px solid #165788;
+	border-radius: 4px;
+	background-color: #165788;
+	color: white;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+.button:hover {
+	background-color: #ffffff;
+	color: #165788;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 1.5rem 2rem;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+}
+
+.form-group {
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+form span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: .75rem;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	color: #165788;
+}
+
+input[type="text"] {
+	width: 90%;
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	transition: all .3s;
+}
+
+input::placeholder {
+	color: black;
+	opacity: 0.6;
+}
+
+#table {
+	margin-top: 30px;
+	border: 1px solid #ddd;
+	text-align: center;
+}
+
+#table th {
+	padding: 10px;
+	color: #ffffff;
+	background-color: #165788;
+	border-radius: 3px;
+}
+
+#table td {
+	margin-top: 30px;
+	border: 1px solid #ddd;
+	padding: 10px;
+}
+
+#delete {
+	background-color: red;
+	border: 1px solid red;
+}
+
+#delete:hover {
+	background-color: #ffffff;
+	color: red;
+}
